@@ -1,6 +1,6 @@
 ﻿namespace TemaMulticolorIU
 {
-    partial class Form1
+    partial class FormMainMenu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSetting = new System.Windows.Forms.Button();
+            this.buttonNotification = new System.Windows.Forms.Button();
+            this.buttonReporting = new System.Windows.Forms.Button();
+            this.buttonCustomer = new System.Windows.Forms.Button();
+            this.buttonOrders = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
@@ -42,114 +42,120 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.button5);
-            this.panelMenu.Controls.Add(this.button4);
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.buttonSetting);
+            this.panelMenu.Controls.Add(this.buttonNotification);
+            this.panelMenu.Controls.Add(this.buttonReporting);
+            this.panelMenu.Controls.Add(this.buttonCustomer);
+            this.panelMenu.Controls.Add(this.buttonOrders);
             this.panelMenu.Controls.Add(this.btnProducts);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 373);
+            this.panelMenu.Size = new System.Drawing.Size(220, 456);
             this.panelMenu.TabIndex = 0;
             // 
-            // button5
+            // buttonSetting
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Image = global::TemaMulticolorIU.Properties.Resources.settings;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 380);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(220, 60);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "   Setting";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSetting.FlatAppearance.BorderSize = 0;
+            this.buttonSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSetting.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonSetting.Image = global::TemaMulticolorIU.Properties.Resources.settings;
+            this.buttonSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSetting.Location = new System.Drawing.Point(0, 380);
+            this.buttonSetting.Name = "buttonSetting";
+            this.buttonSetting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonSetting.Size = new System.Drawing.Size(220, 60);
+            this.buttonSetting.TabIndex = 6;
+            this.buttonSetting.Text = "   Setting";
+            this.buttonSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonSetting.UseVisualStyleBackColor = true;
+            this.buttonSetting.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
-            // button4
+            // buttonNotification
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Image = global::TemaMulticolorIU.Properties.Resources.alarm__1_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 320);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(220, 60);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "   Notifications";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonNotification.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonNotification.FlatAppearance.BorderSize = 0;
+            this.buttonNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNotification.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonNotification.Image = global::TemaMulticolorIU.Properties.Resources.alarm__1_;
+            this.buttonNotification.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNotification.Location = new System.Drawing.Point(0, 320);
+            this.buttonNotification.Name = "buttonNotification";
+            this.buttonNotification.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonNotification.Size = new System.Drawing.Size(220, 60);
+            this.buttonNotification.TabIndex = 5;
+            this.buttonNotification.Text = "   Notifications";
+            this.buttonNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNotification.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonNotification.UseVisualStyleBackColor = true;
+            this.buttonNotification.Click += new System.EventHandler(this.buttonNotification_Click);
             // 
-            // button3
+            // buttonReporting
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Image = global::TemaMulticolorIU.Properties.Resources.bar_chart;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 260);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(220, 60);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "   Reporting";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonReporting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonReporting.FlatAppearance.BorderSize = 0;
+            this.buttonReporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReporting.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonReporting.Image = global::TemaMulticolorIU.Properties.Resources.bar_chart;
+            this.buttonReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReporting.Location = new System.Drawing.Point(0, 260);
+            this.buttonReporting.Name = "buttonReporting";
+            this.buttonReporting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonReporting.Size = new System.Drawing.Size(220, 60);
+            this.buttonReporting.TabIndex = 4;
+            this.buttonReporting.Text = "   Reporting";
+            this.buttonReporting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonReporting.UseVisualStyleBackColor = true;
+            this.buttonReporting.Click += new System.EventHandler(this.buttonReporting_Click);
             // 
-            // button2
+            // buttonCustomer
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = global::TemaMulticolorIU.Properties.Resources.value__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 200);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(220, 60);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "   Customer";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCustomer.FlatAppearance.BorderSize = 0;
+            this.buttonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCustomer.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonCustomer.Image = global::TemaMulticolorIU.Properties.Resources.value__1_;
+            this.buttonCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomer.Location = new System.Drawing.Point(0, 200);
+            this.buttonCustomer.Name = "buttonCustomer";
+            this.buttonCustomer.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonCustomer.Size = new System.Drawing.Size(220, 60);
+            this.buttonCustomer.TabIndex = 3;
+            this.buttonCustomer.Text = "   Customer";
+            this.buttonCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonCustomer.UseVisualStyleBackColor = true;
+            this.buttonCustomer.Click += new System.EventHandler(this.buttonCustomer_Click);
             // 
-            // button1
+            // buttonOrders
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = global::TemaMulticolorIU.Properties.Resources.shopping_list;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 140);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "  Orders";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonOrders.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonOrders.FlatAppearance.BorderSize = 0;
+            this.buttonOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOrders.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonOrders.Image = global::TemaMulticolorIU.Properties.Resources.shopping_list;
+            this.buttonOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonOrders.Location = new System.Drawing.Point(0, 140);
+            this.buttonOrders.Name = "buttonOrders";
+            this.buttonOrders.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonOrders.Size = new System.Drawing.Size(220, 60);
+            this.buttonOrders.TabIndex = 2;
+            this.buttonOrders.Text = "  Orders";
+            this.buttonOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonOrders.UseVisualStyleBackColor = true;
+            this.buttonOrders.Click += new System.EventHandler(this.buttonOrders_Click);
             // 
             // btnProducts
             // 
             this.btnProducts.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProducts.Image = global::TemaMulticolorIU.Properties.Resources.shopping_cart__1_;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,6 +168,7 @@
             this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // panelLogo
             // 
@@ -172,14 +179,14 @@
             this.panelLogo.Size = new System.Drawing.Size(220, 80);
             this.panelLogo.TabIndex = 0;
             // 
-            // Form1
+            // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 373);
+            this.ClientSize = new System.Drawing.Size(646, 456);
             this.Controls.Add(this.panelMenu);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormMainMenu";
+            this.Text = "FormMainMenu";
             this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -190,11 +197,11 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSetting;
+        private System.Windows.Forms.Button buttonNotification;
+        private System.Windows.Forms.Button buttonReporting;
+        private System.Windows.Forms.Button buttonCustomer;
+        private System.Windows.Forms.Button buttonOrders;
     }
 }
 
